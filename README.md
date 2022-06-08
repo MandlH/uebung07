@@ -4,12 +4,14 @@
 
 **Lafer Franz**: FL  
 **Mandl Harald** HM   
-**Jöbsl Stefanie** SJ
+**Joebstl Stefanie** SJ
 
-- [x] Maven Projekt erstellen
-- [] Erweitern sie Ihre pom.xml
-- [] Finde die Fehler im bestehen Code
-- [] Erstellen Sie parallel zur gegebenen Version eine neue Implementierung:
-- [] Erstellen Sie Tests
-- [] 
+- [x] create maven project - HM
+- [] extend the pom.xml - HM, FL, SJ
+- [] find mistakes in the code - HM
+- [] create parallel new implementations to the new version - SJ
+- [] create tests - HM
+- [] create JavaDoc - FL
+- [] create mvn site - SJ
+- [] create a queue version that allows to manage double values - FL
 
