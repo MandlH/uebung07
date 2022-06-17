@@ -25,11 +25,22 @@
                 <picUrl>https://avatars.githubusercontent.com/u/98320551?s=400&amp;</picUrl>
             </properties>
         </developer>
+        <developer>
+            <id>TheRealFranzmann</id>
+            <name>Franz Lafer</name>
+            <email>franz.lafer@edu.fh-joanneum.at</email>
+            <url>https://github.com/TheRealFranzmann</url>
+            <organization>FH-JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fhjoanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/102233551?s=400&amp;u=5d6526fd016b93a2f40fba1b0df40e50c3fb18b0&amp;v=4</picUrl>
+            </properties>
+        </developer>
     </developers>
-<<<<<<< HEAD
-
-=======
->>>>>>> error
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
