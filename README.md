@@ -11,7 +11,7 @@
 - [x] find mistakes in the code - HM
 - [] create parallel new implementations to the new version - SJ
 - [x] create tests - HM
-- [] create JavaDoc - FL
+- [x] create JavaDoc - FL
 - [] create mvn site - SJ
 - [] create a queue version that allows to manage double values - FL
 
