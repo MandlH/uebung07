@@ -36,11 +36,20 @@ public abstract class Drink {
      */
     public abstract boolean isAlcoholic();
 
-
+    /**
+     * The getter method for the name of the drink
+     *
+     * @return the name of the drink
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * The setter method for the name of the drink
+     *
+     * @param name the name of the drink which the user wants for his new drink
+     */
     public void setName(String name) {
         this.name = name;
     }

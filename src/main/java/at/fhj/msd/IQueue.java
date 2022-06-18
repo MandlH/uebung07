@@ -1,29 +1,36 @@
 package at.fhj.msd;
 
-// fastly written (not really nice) comments but good enough to understand
+/**
+ * The Interface for the Queues
+ */
 public interface IQueue {
-  /* 
-  add object to queue, return true if works, otherwise false
-  */
+
+  /**
+   * add object to queue, return true if works, otherwise false
+   *
+   * @param obj the drink
+   */
   public abstract boolean offer(SimpleDrink obj); //ERROR:2 should be an Object
 
-  /* 
-  returns and deletes first element; null if no element in there
+  /**
+   * returns and deletes first element; null if no element in the queue
    */
   public abstract SimpleDrink poll();
 
-  /* 
-  like poll but if no elment exists NoSuchElementException is throwin instead of null return value
+  /**
+   * also deletes the first element (like poll), but if there is no element in the queue a "NoSuchElementException" is thrown
+   * instead of the null return
    */
   public abstract SimpleDrink remove();
 
-  /* 
-  gives first element but does not delete, null if nothing there
+  /**
+   * gives a look on the first element in your queue, if there is nothing the method returns null
    */
   public abstract SimpleDrink peek();
 
-  /*
-  like peek but NoSuchElementException instead of null
+  /**
+   * gives a look on the first element like peek but throws a "NoSuchElementException" instead of null if
+   * there is nothing in the queue
    */
   public abstract SimpleDrink element();
 }

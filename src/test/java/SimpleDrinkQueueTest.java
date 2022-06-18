@@ -8,12 +8,27 @@ import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Testclass for the SimpleDrinkQueueTest
+ */
 public class SimpleDrinkQueueTest {
 
+    /**
+     * implementation of the simple drinks
+     */
     SimpleDrink cherry, cola, alcohol;
+    /**
+     * implementation of the queue
+     */
     SimpleDrinkQueue queue;
+    /**
+     * implementation of the liquids
+     */
     private static Liquid whisky, liqueur, soda;
 
+    /**
+     * creation of all the liquids for the methods of this testclass
+     */
     @BeforeAll
     public static void setUp(){
 
@@ -22,6 +37,10 @@ public class SimpleDrinkQueueTest {
         soda = new Liquid("Cola", 0.35, 0);
 
     }
+
+    /**
+     * creation of the queue and the SimpleDrinks before each method
+     */
     @BeforeEach()
     public void inizialize(){
         queue = new SimpleDrinkQueue(3);
@@ -30,6 +49,9 @@ public class SimpleDrinkQueueTest {
         alcohol = new SimpleDrink("OneShot", whisky);
     }
 
+    /**
+     * testing the offer method
+     */
     @Test
     public void offerTest(){
         Assertions.assertTrue(queue.offer(cherry));
@@ -37,6 +59,9 @@ public class SimpleDrinkQueueTest {
         Assertions.assertTrue(queue.offer(alcohol));
     }
 
+    /**
+     * testing the offer method
+     */
     @Test
     public void offerFalseTest(){
         queue.offer(cherry);
@@ -45,37 +70,54 @@ public class SimpleDrinkQueueTest {
         Assertions.assertFalse(queue.offer(cherry));
     }
 
+    /**
+     * testing the poll method
+     */
     @Test
     public void pollTest(){
         queue.offer(cherry);
         Assertions.assertEquals(cherry, queue.poll());
     }
 
+    /**
+     * testing the poll method
+     */
     @Test
     public void pollNullTest(){
         Assertions.assertNull(queue.poll());
     }
 
+    /**
+     * testing the element method
+     */
     @Test
     public void elementExceptionTest(){
         Assertions.assertThrows(NoSuchElementException.class, ()-> queue.element());
     }
 
+    /**
+     * testing the element method
+     */
     @Test
     public void elementTest(){
         queue.offer(cherry);
         Assertions.assertEquals(cherry, queue.element());
     }
 
+    /**
+     * testing the remove method
+     */
     @Test
     public void removeExceptionTest(){
         Assertions.assertThrows(NoSuchElementException.class, ()-> queue.remove());
     }
 
+    /**
+     * testing the remove method
+     */
     @Test
     public void removeTest(){
         queue.offer(cherry);
         Assertions.assertEquals(cherry, queue.remove());
     }
-
 }
