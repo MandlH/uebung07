@@ -4,8 +4,7 @@
     <body>
         <menu name="Overview">
             <item name="Introduction" href="index.html"/>
-            <item name="Test" href="test.html"/>
-            <item name="Drinks" href="drinks.html"/>
+
             <item name="Harald Mandl" href="mandl.html"/>
             <item name="Franz Lafer" href="lafer.html"/>
         </menu>
