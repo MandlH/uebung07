@@ -7,11 +7,10 @@
 **Joebstl Stefanie** SJ
 
 - [x] create maven project - HM
-- [] extend the pom.xml - HM, FL, SJ
+- [x] extend the pom.xml - HM, FL
 - [x] find mistakes in the code - HM
-- [] create parallel new implementations to the new version - SJ
+- [x] create parallel new implementations to the new version - HM
 - [x] create tests - HM
 - [x] create JavaDoc - FL
-- [] create mvn site - SJ
-- [] create a queue version that allows to manage double values - FL
+- [x] create mvn site - FL
 
